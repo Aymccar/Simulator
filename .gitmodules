@@ -1,0 +1,27 @@
+[submodule "colcon_ws/src/Waf_Ros2_Bridge"]
+	path = colcon_ws/src/Waf_Ros2_Bridge
+	url = git@github.com:Aymccar/Waf_Ros2_Bridge.git
+	branch = dev
+[submodule "stonefish"]
+	path = stonefish
+	url = git@github.com:Aymccar/stonefish.git
+	branch = dev
+[submodule "ardupilot"]
+	path = ardupilot
+	url = git@github.com:Aymccar/ardupilot.git
+	branch = ros
+[submodule "colcon_ws/src/stonefish_ros2"]
+	path = colcon_ws/src/stonefish_ros2
+	url = git@github.com:Aymccar/stonefish_ros2.git
+	branch = dev
+[submodule "colcon_ws/src/Ardupilot_Stonefish_parser"]
+	path = colcon_ws/src/Ardupilot_Stonefish_parser
+	url = git@github.com:Aymccar/Ardupilot_Stonefish_parser.git
+[submodule "BlueOS"]
+	path = BlueOS
+	url = git@github.com:Aymccar/BlueOS.git
+	branch = ros
+[submodule "blueos-docker-base"]
+	path = blueos-docker-base
+	url = git@github.com:Aymccar/blueos-docker-base.git
+	branch = ubuntu24
