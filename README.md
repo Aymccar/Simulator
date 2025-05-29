@@ -7,12 +7,18 @@ git clone https://github.com/Aymccar/Simulator.git --recurse-submodules
 ```
 ## Installation 
 ### Building Stonefish
+#### Dependencies
+- OpenGL (libglm-dev)
+- SDL2 libsdl2-dev
+- Freetype (libfreetype6-dev)
+
 ```bash
 cd stonefish
 mkdir build && cd build
 cmake ..
 make -jX && sudo make install
 ```
+---
 
 ### Building BlueOS core docker image 
 #### Dependencies 
@@ -24,7 +30,7 @@ docker build . -t ros-blueos-base
 ```
 ---
 ### Building BlueOS docker image
-#### Dep
+#### Dependencies
 -	docker
 
 ```bash
@@ -35,7 +41,7 @@ This will automatically clone and build the [Waf_ROS2_bridge](https://github.com
 
 ---
 ### Building ROS architecture
-#### Dep
+#### Dependencies
 - ROS2 (tested with ROS2 Jazzy)
 
 ```bash
@@ -48,7 +54,7 @@ source install/setup.bash|zsh
 ```
 ----
 ### Building Ardupilot firmware
-#### Dep
+#### Dependencies
 - Classic ardupilot dep
 Run ```Tools/environment_install/install-prereqs-ubuntu.sh -y``` on the root
 - ROS2 (tested with ROS2 Jazzy)
