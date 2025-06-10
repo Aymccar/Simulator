@@ -48,10 +48,12 @@ This will automatically clone and build the [Waf_ROS2_bridge](https://github.com
 cd colcon_ws
 colcon build
 ```
-Do not forget to source the ROS2 workspace 
+Do not forget to source the ROS2 workspace and use the right rmw (or add it to the `/.bashrc`)
 ```bash
 source install/setup.bash|zsh
+export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 ```
+
 ----
 ### Building Ardupilot firmware
 #### Dependencies
