@@ -25,3 +25,6 @@
 	path = blueos-docker-base
 	url = git@github.com:Aymccar/blueos-docker-base.git
 	branch = ubuntu24
+[submodule "colcon_ws/src/v4l2ros2"]
+	path = colcon_ws/src/v4l2ros2
+	url = git@github.com:Aymccar/v4l2ros2.git

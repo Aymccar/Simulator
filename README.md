@@ -80,4 +80,9 @@ and finally run Stonefish with:
 ```bash
 ros2 launch stonefish_ros2 launchros.launch.py #Add stonefish args if needed
 ```
+For the video launch :
+```bash
+ros2 run v4l2ros2 reset.sh #Need sudo password
+ros2 launch v4l2ros2 video_launch.py
+```
 
