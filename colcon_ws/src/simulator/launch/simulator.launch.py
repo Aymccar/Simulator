@@ -39,7 +39,7 @@ def generate_launch_description():
     )
 
     # raytracer bash command
-    path_raytracer = PathJoinSubstitution([FindPackagePrefix("raytracer"), "lib", "raytracer", "raytracer"])
+    path_raytracer = PathJoinSubstitution([FindPackagePrefix("anglerfish"), "lib", "anglerfish", "anglerfish"])
     raytracer_cmd = [path_raytracer,
                      scenario_path,
                      data_path]

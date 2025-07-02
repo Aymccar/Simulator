@@ -31,3 +31,6 @@
 [submodule "colcon_ws/src/ROS2_UW_Raytracer"]
 	path = colcon_ws/src/ROS2_UW_Raytracer
 	url = https://github.com/Aymccar/ROS2_UW_Raytracer
+[submodule "colcon_ws/src/Anglerfish"]
+	path = colcon_ws/src/Anglerfish
+	url = https://github.com/Aymccar/Anglerfish
