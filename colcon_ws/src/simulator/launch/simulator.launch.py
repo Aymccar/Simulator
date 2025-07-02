@@ -16,7 +16,7 @@ def generate_launch_description():
 
     # get Ardupilot ROS2 bridge launch file
     ardupilotros2_path = os.path.join(
-        FindPackageShare("ArdupilotStonefish").find("ArdupilotStonefish"),
+        FindPackageShare("ardupilotstonefish").find("ardupilotstonefish"),
         "launch",
         "parser_launch.yaml"
     )
