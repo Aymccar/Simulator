@@ -11,6 +11,9 @@ git clone https://github.com/Aymccar/Simulator.git --recurse-submodules
 - OpenGL (libglm-dev)
 - SDL2 libsdl2-dev
 - Freetype (libfreetype6-dev)
+- OptiX 7.7.0
+- Cuda
+- assimp (libassimp-dev)
 
 ```bash
 cd stonefish
