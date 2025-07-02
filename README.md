@@ -67,6 +67,9 @@ cd ardupilot
 "{PATH to this repo}/colcon_ws/src/Waf_Ros2_Bridge/include" --wafrosbridge_lib_path "{PATH to this repo}/colcon_ws/install/Waf_Ros2_Bridge/lib"
 ./waf sub
 ```
+## Simulation setup
+A simulation is defined by some datas and xml file, check [Stonefish](https://github.com/patrykcieslak/stonefish) documentation to learn how to write it.
+Anglerfish (the raytracer) is based on the same data and scenario file as stonefish but it uses some new keyword. Check [Anglerfish](https://github.com/Aymccar/Anglerfish).
 
 ## Running the simulator
 Create to v4l2 loopback camera:
@@ -88,9 +91,6 @@ Click on **UPLOAD FIRMWARE FILE** and upload the freshly compiled firmware locat
 
 Then run: 
 ```bash 
-ros2 launch simulator simulator.launch.py
+ros2 launch simulator simulator.launch.py simulation_data:="The root folder for your data used by stonefish and the raytracer" scenario_desc:="The root xml file"
 ```
-Now you should be able to add a stream on BlueOS like on a normal robot. You should also be able to control the robot from any kind of GCScompatible with MavLink and ardupilot like [QGroundControl](https://qgroundcontrol.com/) or [BlueRobotics Cockpit](https://github.com/bluerobotics/cockpit).  
-
-[!NOTE]
-Path are hard coded for the moment, soon it will become args.
+Now you should be able to add a stream on BlueOS like on a normal robot. You should also be able to control the robot from any kind of GCS compatible with MavLink and ardupilot like [QGroundControl](https://qgroundcontrol.com/) or [BlueRobotics Cockpit](https://github.com/bluerobotics/cockpit).  
